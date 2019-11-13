@@ -1,0 +1,40 @@
+.side-barr{
+   height: 100%;
+   background: white;
+   box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 70%;
+   max-width: 400px;
+   z-index: 200;
+   transform: translateX(-100%);
+   transition: transform 0.3s ease-out; 
+}
+
+.side-barr ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-barr li{
+    margin: 0.5rem 0;
+}
+
+.side-barr a{
+    color: #0084ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.side-barr a:hover,
+.side-barr a:focus{
+    color: #d11c1c;
+
+}
+.side-barr.open{
+    transform: translateX(0);
+}
